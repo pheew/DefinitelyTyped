@@ -12,7 +12,7 @@ export type Omit<T, K extends keyof T> = Pick<T, Diff<keyof T, K>>;
 import { ComponentClass } from "react";
 import { StyledComponentClass } from "styled-components";
 
-export type ResponsiveProp = number | string | Array<string | number>;
+export type ResponsiveProp = number | string | Array<string | number | null>;
 
 export interface CommonProps {
     width: ResponsiveProp;
